@@ -1,4 +1,4 @@
-package domain;
+package com.cinglevue.domain;
 
 import java.util.Date;
 
@@ -18,6 +18,8 @@ public class Announcement {
 	private Date startDate;
 	
 	private Date expiryDate;
+	
+	private boolean active = Boolean.FALSE;
 
 	public String getId() {
 		return id;
@@ -25,6 +27,14 @@ public class Announcement {
 
 	public void setId(String id) {
 		this.id = id;
+	}
+
+	public boolean isActive() {
+		return active;
+	}
+
+	public void setActive(boolean active) {
+		this.active = active;
 	}
 
 	public String getTitle() {
